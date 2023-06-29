@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link rel="stylesheet" type="text/css" href="css/AddParcelStyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
+        <script src="https://kit.fontawesome.com/6e1efe0729.js" crossorigin="anonymous"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="menu-bar">
+            <h1 class="logo">Parcel<span>Management.</span></h1>
+            <ul>
+                <li><a href="#">Branch<i class="fa-solid fa-building"></i></a>
+
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="AddBranch.html">Add Branch</a></li>
+                            <li><a href="ViewBranch.php">View Branch</a></li>                
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Dealer<i class="fa-solid fa-shop"></i></a>
+
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="AddDealer.html">Add Dealer</a></li>      
+                            <li><a href="ViewDealer.php">View Dealer</a></li>       
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Users<i class="fa-solid fa-user"></i></a>
+
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="AddUser.html">Add User</a></li>
+                            <li><a href="ViewUser.php">View Users</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="Logout.php">Logout<i class="fa-solid fa-right-from-bracket"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="dabody">
+
+            <div class="formContainer">
+
+                <div class="title">Add New Parcel</div>
+
+                <form action="SaveParcelDetails.php" method="POST">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="f-detail">Parcel Name:</span>
+                            <input type="text" name="pname" placeholder="Enter the parcel name" required>       
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Parcel Weight in Kg:</span>
+                            <input type="text" name="pweight" placeholder="Enter parcel weight" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Dispatch Date:</span>
+                            <input type="date" name="ddate" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Delivery Address:</span>
+                            <input type="text" name="daddress" placeholder="Enter the delivery address" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Sender's Name:</span>
+                            <input type="text" name="sname" placeholder="Enter sender's name" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Sender's Contact:</span>
+                            <input type="text" name="scontact" placeholder="Enter sender's contact number" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Sender's Email:</span>
+                            <input type="email" name="semail" placeholder="Enter your sender's email" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Receiver's Name:</span>
+                            <input type="text" name="rname" placeholder="Enter receiver's name" required>          
+                        </div>
+                        <div class="input-box">
+                            <span class="f-detail">Receiver's Contact:</span>
+                            <input type="text" name="rcontact" placeholder="Enter receiver's contact" required>          
+                        </div>
+                        <div class="input-box">
+                            <span class="f-detail">Receiver's Email:</span>
+                            <input type="email" name="remail" placeholder="Enter receiver's name" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Please select a parcel type:</span>
+                            <select class="input-bo" name="ptype" size="1">
+                                <option value="empty"> </option>
+                                <option value="Document">Document</option>
+                                <option value="Box">Box</option>
+                                <option value="Container">Container</option>
+
+                            </select>            
+                        </div>
+                    </div>
+
+                    <div class="btn-submit"> 
+                        <input type="submit" class="buttonn" name="btnSubmit" value="Submit">
+                    </div>
+                </form>
+
+            </div> 
+        </div>
+    </body>
+</html>

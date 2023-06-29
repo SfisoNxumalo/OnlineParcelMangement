@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link rel="stylesheet" type="text/css" href="css/AddParcelStyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
+        <script src="https://kit.fontawesome.com/6e1efe0729.js" crossorigin="anonymous"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="menu-bar">
+            <h1 class="logo">Parcel<span>Management.</span></h1>
+            <ul>
+                <li><a href="#">Parcel<i class="fa-solid fa-box"></i></a>
+
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="AddParcel.html">Add Parcel</a></li>
+                            <li><a href="ViewParcel.php">View Parcel</a></li>                
+                        </ul>
+                    </div>
+                </li>
+                
+                <li><a href="#">Branch<i class="fa-solid fa-building"></i></a>
+
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="AddBranch.html">Add Branch</a></li>
+                            <li><a href="ViewBranch.php">View Branch</a></li>                
+                        </ul>
+                    </div>
+                </li>
+                
+                <li><a href="#">Users<i class="fa-solid fa-user"></i></a>
+
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="AddUser.html">Add User</a></li>
+                            <li><a href="ViewUser.php">View Users</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="Logout.php">Logout<i class="fa-solid fa-right-from-bracket"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="dabody">
+
+            <div class="formContainer">
+
+                <div class="title">Add New Dealer</div>
+
+                <form action="SaveDealerDetails.php" method="POST">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="f-detail">Dealer Name:</span>
+                            <input type="text" name="dname" placeholder="Enter Dealer name" required>       
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Dealer Address:</span>
+                            <input type="text" name="daddress" placeholder="Enter Dealer address" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Dealer Email:</span>
+                            <input type="email" name="demail" placeholder="Enter Dealer email" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Dealer contact:</span>
+                            <input type="text" name="dcontact" placeholder="Enter Dealer contact" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">Province:</span>
+                            <select class="input-bo" name="dprovince" size="1">
+                                <option value="empty"> </option>
+                                <option value="Eastern Cape">Eastern Cape</option>
+                                <option value="Free State">Free State</option>
+                                <option value="Gauteng">Gauteng</option>
+                                <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                                <option value="Limpopo">Limpopo</option>
+                                <option value="Mpumalanga">Mpumalanga</option>
+                                <option value="Northern Cape">Northern Cape</option>
+                                <option value="North West">North West</option>
+                                <option value="Western Cape">Western Cape</option>
+                            </select>            
+                        </div>
+                    </div>
+
+                    <div class="btn-submit"> 
+                        <input type="submit" class="buttonn" name="btnSubmit" value="Submit">
+                    </div>
+                </form>
+
+            </div> 
+        </div>
+    </body>
+</html>

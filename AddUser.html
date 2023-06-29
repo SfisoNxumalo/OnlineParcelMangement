@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link rel="stylesheet" type="text/css" href="css/AddParcelStyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
+        <script src="https://kit.fontawesome.com/6e1efe0729.js" crossorigin="anonymous"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="menu-bar">
+            <h1 class="logo">Parcel<span>Management.</span></h1>
+            <ul>
+                <li><a href="#">Parcel<i class="fa-solid fa-box"></i></a>
+
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="AddParcel.html">Add Parcel</a></li>
+                            <li><a href="ViewParcel.php">View Parcel</a></li>                
+                        </ul>
+                    </div>
+                </li>
+                
+                <li><a href="#">Branch<i class="fa-solid fa-building"></i></a>
+
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="AddBranch.html">Add Branch</a></li>
+                            <li><a href="ViewBranch.php">View Branch</a></li>                
+                        </ul>
+                    </div>
+                </li>
+                
+                <li><a href="#">Parcel<i class="fa-solid fa-box"></i></a>
+
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="AddParcel.html">Add Parcel</a></li>
+                            <li><a href="ViewParcel.php">View Parcel</a></li>                
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="Logout.php">Logout<i class="fa-solid fa-right-from-bracket"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="dabody">
+
+            <div class="formContainer">
+
+                <div class="title">Add New User</div>
+
+                <form action="SaveUserDetails.php" method="POST">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="f-detail">User Name:</span>
+                            <input type="text" name="uname" placeholder="Enter user name" required>       
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="f-detail">Create Username</span>
+                            <input type="text" name="username" placeholder="Create username" required>       
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="f-detail">Create Password:</span>
+                            <input type="text" name="password" placeholder="Create password" required>       
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">User Address:</span>
+                            <input type="text" name="uaddress" placeholder="Enter user address" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">User Email:</span>
+                            <input type="email" name="uemail" placeholder="Enter user email" required>          
+                        </div>
+
+                        <div class="input-box">
+                            <span class="f-detail">User contact:</span>
+                            <input type="text" name="ucontact" placeholder="Enter user contact" required>          
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="f-detail">Works at:</span>
+                            <select class="input-bo" name="worksat" size="1">
+                                <option value="empty"> </option>
+                                <option value="Main Branch">Main Branch</option>
+                                <option value="Different Branch">Different Branch</option>
+                                <option value="Dealer">Dealer</option>
+                            </select>            
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="f-detail">Company Address:</span>
+                            <input type="text" name="caddress" placeholder="Enter company address" required>          
+                        </div>
+                    </div>
+
+                    <div class="btn-submit"> 
+                        <input type="submit" class="buttonn" name="btnSubmit" value="Submit">
+                    </div>
+                </form>
+
+            </div> 
+        </div>
+    </body>
+</html>
